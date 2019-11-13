@@ -6,6 +6,7 @@ buildscript {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:2.1.6.RELEASE")
     }
 }
+apply plugin: 'spring-boot'
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
@@ -16,6 +17,9 @@ apply plugin: 'io.spring.dependency-management'
 bootJar {
     archiveBaseName = 'gradleSample'
     archiveVersion =  '0.0.1-SNAPSHOT'
+    manifest {
+        attributes 'Start-Class': 'com.in28minutes.rest.webservices.restfulwebservices.RestfulWebServicesApplication'
+    }
 }
 
 repositories {
