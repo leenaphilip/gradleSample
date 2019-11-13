@@ -1,0 +1,12 @@
+branch-defaults:
+  master:
+    environment: Containerizedh2gradle-env
+  develop:
+    environment: Containerizedh2gradle-env
+deploy:
+  artifact: gradleSample-0.0.1-SNAPSHOT.jar
+global:
+  application_name: containerizedH2Gradle
+  default_platform: Java 8
+  profile: null
+  sc: git
