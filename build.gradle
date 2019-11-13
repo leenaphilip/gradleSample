@@ -16,6 +16,7 @@ apply plugin: 'io.spring.dependency-management'
 bootJar {
     archiveBaseName = 'gradleSample'
     archiveVersion =  '0.0.1-SNAPSHOT'
+    mainClassName = 'com.in28minutes.rest.webservices.restfulwebservices.RestfulWebServicesApplication'
     manifest {
         attributes 'Start-Class': 'com.in28minutes.rest.webservices.restfulwebservices.RestfulWebServicesApplication'
     }
